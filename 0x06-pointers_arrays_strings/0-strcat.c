@@ -1,22 +1,12 @@
 #include <stdio.h>
-
-char *_strcat(char *dest, char *src) {
-    char *ptr = dest;
-    while (*ptr != '\0') {
+char* _strcat(char* dest, const char* src) {
+    char* ptr = dest;
+    while (*ptr) {  // find the end of the destination string
         ptr++;
     }
-    while (*src != '\0') {
-        *ptr = *src;
-        ptr++;
-        src++;
+    while (*src) {  // copy the source string to the end of the destination string
+        *ptr++ = *src++;
     }
-    *ptr = '\0';
+    *ptr = '\0';  // add the terminating null byte
     return dest;
-}
-
-int main() {
-    char str1[20] = "hello";
-    char str2[] = "world";
-    printf("%s\n", _strcat(str1, str2));
-    return 0;
 }
