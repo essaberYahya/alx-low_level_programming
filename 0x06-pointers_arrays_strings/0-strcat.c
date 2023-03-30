@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 char* _strcat(char* dest, const char* src) {
     char* ptr = dest;
     while (*ptr) {  // find the end of the destination string
