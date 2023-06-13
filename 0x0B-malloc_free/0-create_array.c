@@ -5,6 +5,7 @@
  *@size: number elements array
  *@c: char
  *Return: pointer
+ *Editor : Yahya ESSABER
  */
 
 char *create_array(unsigned int size, char c)
