@@ -2,6 +2,7 @@
 
 char *create_array(unsigned int size, char c)
 {
+	/**Crete arra yfunction**/
 	char *buffer;
 	unsigned int position;
 
